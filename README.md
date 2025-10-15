@@ -35,3 +35,11 @@ npx prisma init
 npx prisma migrate dev --name init
 npx prisma studio
 ```
+
+## tRPC setup
+
+https://trpc.io/docs/client/tanstack-react-query/server-components
+
+```
+npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query@latest zod client-only server-only
+```
