@@ -3,7 +3,7 @@
 ## Versions
 
 ```
-node: v20.10.0
+node: 22.20.0
 create-next-app@15.5.4
 shadcn@3.3.1
 ```
@@ -42,4 +42,18 @@ https://trpc.io/docs/client/tanstack-react-query/server-components
 
 ```
 npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query@latest zod client-only server-only
+```
+
+## Authentication
+
+https://www.better-auth.com/docs/installation
+
+```
+npm install better-auth
+npx @better-auth/cli generate
+```
+
+```
+npx prisma migrate reset
+npx prisma migrate dev --name better-auth-setup
 ```
