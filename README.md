@@ -57,3 +57,28 @@ npx @better-auth/cli generate
 npx prisma migrate reset
 npx prisma migrate dev --name better-auth-setup
 ```
+
+## Background Job
+
+https://www.inngest.com/docs/getting-started/nextjs-quick-start
+
+```
+npx prisma migrate dev --name workflows-table
+```
+
+```
+npm install inngest
+npm install -D inngest-cli
+```
+
+Start Inngest Dev server locally in one Terminal window and let it run.
+
+```
+npm run inngest:dev
+```
+
+Now, in Seperate Terminal window, Run the Application
+
+```
+npm run dev
+```
