@@ -82,3 +82,14 @@ Now, in Seperate Terminal window, Run the Application
 ```
 npm run dev
 ```
+
+# AI
+
+https://ai-sdk.dev/
+
+```
+npm i ai
+npm install @ai-sdk/google
+npm install @ai-sdk/openai
+npm install @ai-sdk/anthropic
+```
