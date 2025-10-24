@@ -93,3 +93,16 @@ npm install @ai-sdk/google
 npm install @ai-sdk/openai
 npm install @ai-sdk/anthropic
 ```
+
+# Error Handling - Sentry
+
+https://docs.sentry.io/platforms/javascript/guides/nextjs/
+
+https://docs.sentry.io/platforms/javascript/guides/nextjs/logs/
+
+```
+npx @sentry/wizard@latest -i nextjs
+```
+
+To test, click on button "Throw Sample Error" on this Link:
+http://localhost:3000/sentry-example-page
