@@ -106,3 +106,38 @@ npx @sentry/wizard@latest -i nextjs
 
 To test, click on button "Throw Sample Error" on this Link:
 http://localhost:3000/sentry-example-page
+
+# Payment Setup - Polar
+
+https://polar.sh/  
+https://sandbox.polar.sh/  
+https://polar.sh/docs/integrate/sdk/adapters/better-auth
+
+```
+npm install @polar-sh/better-auth @polar-sh/sdk
+```
+
+.env:  
+POLAR_ACCESS_TOKEN=  
+POLAR_SUCCESS_URL=http://localhost:3000
+
+Reset the Database:
+
+```
+npx prisma migrate reset
+```
+
+Re Signup and verify the signed up user exist in App Database and in Polar as well:
+
+```
+npx prisma studio
+```
+
+Click on "Upgrade to Pro", then use this card details to proceed with Subscription purchase:  
+Payment Test Card:  
+4242 4242 4242 4242  
+Expiry: 05/55 (any date in future)  
+Security Code: 555 (any 3 digit number)
+
+Test premium features by going to this link and click the button:  
+http://localhost:3000/subscription
